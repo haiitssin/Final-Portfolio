@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/elements.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yip3oim.css"> <!-- Adobe Fonts link -->
+</head>
+
+
+<body>
+    
+                        <!--NAV BAR-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+                        <!--HERO BANNER-->
+    <div class="hero" id="hero">
+        <video autoplay loop muted playsinline id="heroVideo">
+            <source src="assets/Starting-Soon.webm" type="video/webm">
+            <!-- if it does not support webm show this -->
+            Your browser does not support this video format :C
+        </video>
+    
+    </div>
+                        <!--PROFILE-->
+    <main>
+        <div class="content">
+            <div class="profile-picture">
+                <img src="assets/Anna.jpg" alt="Profile Picture">
+            </div>
+            <div class="intro">
+                <h1>Anna Liu</h1>
+                <p>idk what to put here...djdlskfjskldfjskdjflsk</p>
+            </div>
+        </div>
+
+                        <!--CATEGORIES-->
+        <div class="card-container">
+            <a href="portfolio.html" class="card2">
+                <img src="assets/Too-Late.jpg" alt="Portfolio 1" class="card2">
+                <div class="card-overlay"></div>
+                <div class="card-content2">
+                    <h2>My Portfolio 1</h2>
+                </div>
+            </a>
+            <a href="portfolio.html" class="card2">
+                <img src="assets/Too-Late.jpg" alt="Portfolio 2" class="card2">
+                <div class="card-overlay"></div>
+                <div class="card-content2">
+                    <h2>My Portfolio 2</h2>
+                </div>
+            </a>
+            
+            <a href="portfolio.html" class="card2">
+                <img src="assets/Too-Late.jpg" alt="Portfolio 2" class="card2">
+                <div class="card-overlay"></div>
+                <div class="card-content2">
+                    <h2>My Portfolio 2</h2>
+                </div>
+            </a>
+        </div>
+
+
+                        <!--ACCORDION-->
+        <h1 style="color:#D88C9A">About me</h1>
+        <button class="accordion">Age, pronouns, occupation?</button>
+        <div class="panel">
+            <p>I'm born in 2001 and I go by she/her. I'm currently working to become a Graphic Designer</p>
+        </div>
+          
+        <button class="accordion">Are you available for hire?</button>
+        <div class="panel">
+            <p>Yes! I'm happy to do art commissions or work on design projects! I'm very
+                 flexible so feel free to send me a message.</p>
+        </div>  
+          
+        <button class="accordion">Fun fact about yourself?</button>
+        <div class="panel">
+            <p>I love video games and media, the stories and worlds that have been created has
+                 brought a lot of joy to this world. I hope to keep working on my art skills to 
+                 become a concept or character designer in the future.</p>
+        </div>
+
+
+    <!--should i put the video here? :/ -->
+    </main>
+                        <!--VIDEO-->
+    <div class="card-container"> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-ffRvuRRVEE"></iframe>
+    </div>
+                        <!--FOOTER-->
+    <footer class="footer">
+        <div class="container-with-background">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>&copy; <span id="currentYear"></span> Anna Liu. All rights reserved.</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Artworks</a></li>
+                        <li><a href="#">Contact me</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+
+
+
+                        <!--JAVA STUFF-->
+    <script src="script.js"></script>
+    <!--Scrollreveal API here-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+ 
+</body>
+</html>

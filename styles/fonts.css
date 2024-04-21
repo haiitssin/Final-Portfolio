@@ -1,0 +1,143 @@
+/*pixel pixel Fonts yaaay so cute*/
+body {
+    font-family: "lores-12", sans-serif;
+    margin: 0;
+    padding: 0;   
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "lores-9-plus-narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "lores-9-plus-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+  h3 {
+    font-family: "lores-9-wide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  p {
+    font-family: "lores-21-serif", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+/*custom element fonts*/
+.intro h1{
+  font-family: "lores-9-plus-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+.intro p{
+  font-family: "lores-9-plus-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.hero h1 {
+  text-align: center; 
+  color: white;
+  
+}
+
+
+/*BUTTONSSSSS*/
+button {
+    padding: 10px 20px;
+    background-color: #D88C9A;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    
+  }
+  
+    button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+
+
+
+
+/*DEFAULT LIST*/
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  li:last-child {
+    margin-right: 0; 
+  }
+
+
+
+
+
+/* LIST for the nav*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+ /* Responsive Styles */
+ @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
