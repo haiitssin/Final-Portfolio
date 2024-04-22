@@ -16,25 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  //OMG ITS A CAT API  
- 
-function getCatPhoto() {
-  fetch('https://api.thecatapi.com/v1/images/search')
-    .then(response => response.json())
-    .then(data => {
-      const catImageUrl = data[0].url;
-      document.getElementById('catImageContainer').innerHTML = `<img src="${catImageUrl}" alt="Random Cat">`;
-    })
-    .catch(error => {
-      console.error('Error fetching cat photo:', error);
-      document.getElementById('catImageContainer').innerHTML = '<p>Error fetching cat photo</p>';
-    });
-}
-
-document.getElementById('getCatPhotoBtn').addEventListener('click', getCatPhoto);
-
-
-
+  
   
 // scroll reveal and what it applies to
   window.addEventListener('DOMContentLoaded', function() {
@@ -105,3 +87,19 @@ var currentYear = new Date().getFullYear();
 // Sets the year
 document.getElementById("currentYear").textContent = currentYear;
 
+
+
+function getCatPhoto() {
+  fetch('https://api.thecatapi.com/v1/images/search')
+    .then(response => response.json())
+    .then(data => {
+      const catImageUrl = data[0].url;
+      document.getElementById('catImageContainer').innerHTML = `<img src="${catImageUrl}" alt="Random Cat">`;
+    })
+    .catch(error => {
+      console.error('Error fetching cat photo:', error);
+      document.getElementById('catImageContainer').innerHTML = '<p>Error fetching cat photo</p>';
+    });
+}
+
+document.getElementById('getCatPhotoBtn').addEventListener('click', getCatPhoto);
