@@ -6,12 +6,10 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/elements.css">
-    <link rel="stylesheet" href="https://use.typekit.net/yip3oim.css"> <!-- Adobe Fonts link -->
-</head>
-
-
-<body>
+    <link rel="stylesheet" href="https://use.typekit.net/yip3oim.css"> 
     
+</head>
+<body>
                         <!--NAV BAR-->
    <header>
     <nav>
@@ -24,55 +22,52 @@
         </ul>
     </nav>
 </header>
-                        <!--HERO BANNER-->
-    <div class="hero" id="hero">
-        <video autoplay loop muted playsinline id="heroVideo">
-            <source src="assets/animation/twitch-1.webm" type="video/webm">
-            <!-- if it does not support webm show this -->
-            Your browser does not support this video format :C
-        </video>
-    
-    </div>
-                        <!--PROFILE-->
-    <main>
-        <div class="content">
-            <div class="profile-picture">
-                <img src="assets/art/Anna.jpg" alt="Profile Picture">
-            </div>
-            <div class="intro">
-                <h1>Anna Liu</h1>
-                <p>idk what to put here...djdlskfjskldfjskdjflsk</p>
-                <button> <a href="contact-me.html"> Contact me </button></a>
-            </div>
-        </div>
 
-                        <!--CATEGORIES-->
-        <div class="card-container">
-            <a href="portfolio.html" class="card2">
-                <img src="assets/art/Too-Late.jpg" alt="Artworks" class="card2">
-                <div class="card-overlay"></div>
-                <div class="card-content2">
-                    <h2>Artworks</h2>
-                </div>
-            </a>
-            <a href="design-projects.html" class="card2">
-                <img src="assets/designs/Social-1.png" alt="Design Projects" class="card2">
-                <div class="card-overlay"></div>
-                <div class="card-content2">
-                    <h2>Design Projects</h2>
-                </div>
-            </a>
-            
-            <a href="animations.html" class="card2">
-                <img src="assets/animation/animation-cover.JPG" alt="Mockups" class="card2">
-                <div class="card-overlay"></div>
-                <div class="card-content2">
-                    <h2>Mockups</h2>
-                </div>
-            </a>
-        </div>
+                        <!--ARTWORKS-->
+    <main>
+       
 
         <div class="wrap">
+            <!-- ACCORDION -->
+            <div class="donairishere">
+                
+                <img src="assets/animation/animation-cover.JPG" alt="Donair">
+            </div>
+           
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+                <form action="send_email.php" method="post"> <!--uses the action attribute and connects to the php file, and from there it should send it to my email, method attribute	sends the form-data as an HTTP post transaction-->
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    
+                    <button type="submit">Submit</button>
+                  </form>
+            </div>
+        
+        
+           
+        </div> 
+
+        <div class="card-container"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-ffRvuRRVEE"></iframe>
+            
+        </div>
+
+        
+        <h1>Random Cat Picture</h1>
+            <div id="catImageContainer"></div>
+                <div class="api-button-container"> <button id="getCatPhotoBtn" class="api=button">Get Cat Photo</button>
+                </div> 
+
+      
+
+    <div class="wrap">
             <!-- ACCORDION -->
             <div class="intro">
                 <h1 style="color:#D88C9A">About me</h1>
@@ -99,17 +94,14 @@
             <div class="donairishere">
                 <img src="assets/art/Donair_1.gif" alt="Donair">
             </div>
-        </div>
-        
-   
+        </div> 
     </main>
-    
-                        <!--FOOTER-->
+
     <footer class="footer">
         <div class="container-with-background">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>&copy; <span id="currentYear"></span> Anna Liu. All rights reserved.</h3>
+                    <h3>&copy; <span id="year"></span> Anna Liu. All rights reserved.</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="portfolio.html">Artworks</a></li>
@@ -123,12 +115,9 @@
         </div>
     </footer>
 
-
-
-                        <!--JAVA STUFF-->
     <script src="script.js"></script>
-    <!--Scrollreveal API here-->
+    <!--the scroll reveal api-->
     <script src="https://unpkg.com/scrollreveal"></script>
- 
+   
 </body>
 </html>

@@ -16,8 +16,8 @@
 .hero {
   position: relative;
   width: 100%; 
-   
-  margin: 0 auto; 
+  margin-bottom: 100px; 
+  
   overflow: hidden;
 }
 
@@ -45,7 +45,7 @@
 .profile-picture img {
   width: 100%; 
   height: 100%; 
-  object-fit: cover; /
+  object-fit: cover; 
 }
 
 .intro {
@@ -54,6 +54,8 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
+
+
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -116,17 +118,19 @@
     display: flex; 
     align-items: center;
     justify-content: center; 
-    width: 800px; 
+    width: 500px; 
+    height: 500px;
     overflow: hidden;
     transition: box-shadow 0.3s ease;
     text-decoration: none;
-    margin: 10px; 
+    margin: 10px;
+     
   }
   
   .card2 img {
     width: 100%;
-    height: auto;
     display: block;
+    object-fit: cover;
     transition: filter 0.6s ease; /* blur effect */
     
   }
@@ -135,21 +139,20 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; 
+    height: 100%; 
     background-color: rgba(0, 0, 0, 0.5); 
     opacity: 0; 
     transition: opacity 0.3s ease;
     z-index: 1; 
-  }
+}
   
-  /* Style for the content */
+  /* Style for the categories*/
   .card-content2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     text-align: center;
     z-index: 2; /*puts the text on top/orders them?*/
     opacity: 0; 
@@ -170,14 +173,9 @@
   }
   
   .card2:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     
   }
-
-
-
-
-
 
 
 
@@ -186,12 +184,12 @@
  /*ACCORDION*/
  .accordion {
     width: 100%;
-    background-color: #8E7DBE;
+    background-color: #7034be;
     color: #ffffff;
     cursor: pointer;
     padding: 18px;
-    text-align: left;
-    border: none;
+    text-align:left;
+    border: 2px solid #181818;
     outline: none;
     transition: background-color 0.3s;
    
@@ -236,7 +234,7 @@
   }
   
   .active, .accordion:hover {
-    background-color: #D88C9A;
+    background-color: #db3265;
   }
   
   .accordion:after {
@@ -254,20 +252,58 @@
   
   .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color:#181818;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
   
-  @media (max-width: 768px) {
-    .accordion {
-      max-width: 100%;
-    }
-  }
   
+  /*used for donair and the accordion*/
+  .wrap {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 
+.donairishere {
+  width: 510px;
+  height: 460px;
+  border-radius: 25%;
+  overflow: hidden;
+  margin-left: 20px;
+  position: relative;
+}
+
+.donairishere img { /*centers it so donair can still see you when the screen gets smaller*/
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+ 
+}
+
+@media (max-width: 768px) {
+    
+
+    .donairishere {
+        margin-left: 0; 
+    }
+
+    .wrap {
+      flex-direction: column; /* Stacks em on small screens */
+      align-items: center; 
+      
+    }
+
+    .intro {
+      margin-left: 0;
+  }
+}
+  
 
 
 /*footer*/
@@ -277,4 +313,58 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+
+.contact-container {
+  margin-left: 50px;  
+  margin-top: 20px;
+  
+}
+
+/*contact me/form*/
+
+form {
+  max-width: 500px; 
+  margin: 0 auto;
+  color: white; 
+  font-size: 18px; 
+  
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+/*API*/
+
+.api-button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.api-button {
+  width: 100%;
+  background-color: #7034be;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  max-width: 200px; 
+}
+
+#catImageContainer {
+  margin-top: 20px;
+  text-align: center; 
+}
+
+#catImageContainer img {
+  max-width: 100%; 
+  height: auto; 
 }
