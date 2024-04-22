@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  
+
+
   
 // scroll reveal and what it applies to
   window.addEventListener('DOMContentLoaded', function() {
@@ -82,10 +83,27 @@ ScrollReveal().reveal('.card-container > *', {
 
 
 
+
+//opens a modal that shows the image in the full size
+function openModal(imgSrc) {
+  document.getElementById("myModal").style.display = "block";
+  var modalImg = document.getElementById("modalImg");
+  modalImg.src = imgSrc;
+}
+
+//lets them close it
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+
+
+
 // changes the year to current
 var currentYear = new Date().getFullYear();
 // Sets the year
 document.getElementById("currentYear").textContent = currentYear;
+
 
 
 
