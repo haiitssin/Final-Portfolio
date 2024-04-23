@@ -28,7 +28,7 @@
 <main>
     
     <div class="card-container">
-        <h1>Twitch Banners</h1>   
+        <h1 style="color:rgb(255, 0, 255)";>Twitch Banners</h1>   
     </div>
         <div class="card-container">
             <p>My first animation in Adobe After Effects</p>
@@ -59,7 +59,7 @@
  <div id="myModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     
-    <img class="modal-content" id="modalImg" alt="Large Image">
+    <img class="modal-content" id="modalImg" alt="Large Image" src="placeholder.jpeg">
     <video class="modal-content" id="modalVideo" controls>
         
         
@@ -67,14 +67,14 @@
 </div>
 
     
-    </div>
+    
 </main>
 
     <footer class="footer">
         <div class="container-with-background">
             <div class="footer-content">
                 <div class="footer-info">
-            <h3>&copy; <span id="year"></span> Anna Liu. All rights reserved.</h3>
+            <p>&copy; <span id="year"></span> Anna Liu. All rights reserved.</p>
    
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -89,11 +89,20 @@
         </div>
     </footer>
 
-<script src="script.js"></script>
+    <script>
+        function updateFooterYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('year').innerText = currentYear;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateFooterYear);
+    </script>
+    
+    <script src="script.js"></script>
 
 
 <!--the scroll reveal api-->
-<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </body>
 </html>

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         origin: 'top', 
         easing: 'ease-in-out', 
         duration: 1000, 
-        reset: true 
+        
     });
     // apply to hero description
     ScrollReveal().reveal('#heroDescription', {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         origin: 'bottom',
         easing: 'ease-in-out',
         duration: 1000,
-        reset: true
+        
     });
 
     // appy to .card
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         origin: 'bottom',
         easing: 'ease-in-out',
         duration: 1000,
-        reset: true
+       
     });
    // apply to main section
    ScrollReveal().reveal('.content > *', {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     origin: 'bottom',
     easing: 'ease-in-out',
     duration: 1000,
-    reset: true
+    
 });
     //apply to .card-container 
 ScrollReveal().reveal('.card-container > *', {
@@ -65,7 +65,7 @@ ScrollReveal().reveal('.card-container > *', {
     origin: 'bottom',
     easing: 'ease-in-out',
     duration: 1000,
-    reset: true
+    
 });
 
     // apply to accordion
@@ -75,8 +75,7 @@ ScrollReveal().reveal('.card-container > *', {
         origin: 'bottom',
         easing: 'ease-in-out',
         duration: 1000,
-        reset: true,
-        once: true // Trigger the animation only once but its not working?
+       
     });
     
 });
@@ -113,14 +112,6 @@ function closeModal() {
 }
 
 
-
-// changes the year to current
-var currentYear = new Date().getFullYear();
-// Sets the year
-document.getElementById("currentYear").textContent = currentYear;
-
-
-
 //cat API
 function getCatPhoto() {
   fetch('https://api.thecatapi.com/v1/images/search')
@@ -136,3 +127,5 @@ function getCatPhoto() {
 }
 
 document.getElementById('getCatPhotoBtn').addEventListener('click', getCatPhoto);
+
+

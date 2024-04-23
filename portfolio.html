@@ -25,35 +25,41 @@
 
                         <!--ARTWORKS-->
     <main>
+
+        <div class="card-container">
+            <h1 style="color: rgb(168, 61, 255);">Digital Art</h1>  
+        </div>  
+        
+
         <div class="card-container" >
             <div class="card" onclick="openModal('image', 'assets/art/Cat-Girl.gif')">
-                <img src="assets/art/Cat-Girl.gif" alt="A black and white digital drawing of a girl with cat ears smiling with a small black cat wearing a tux and bow tie underneath her just sitting there. In a anime art style." style="width:100%">
+                <img src="assets/art/Cat-Girl.gif" alt="A girl with cat ears smiling and small black cat underneath her" style="width:100%">
                 <div class="container">
-                    <h4><b>"Cat Girl Sketch"</b></h4>
+                    <h1 style="font-size: large;"><b>"Cat Girl Sketch"</b></h1>
                     <p>2023</p>
                 </div>
             </div>
 
             <div class="card" onclick="openModal('image', 'assets/art/Angel.gif')">
-                <img src="assets/art/Angel.gif" alt="A digital drawing of an angelic girl shoulders and above. Has light blue hair and white feathers on both sides of her head. There are 2 angels wings covering her chest area." style="width:100%">
+                <img src="assets/art/Angel.gif" alt="Portrait of a angel with her wings covering her bust area" style="width:100%">
                 <div class="container">
-                    <h4><b>"Angel Portrait"</b></h4>
+                    <h1 style="font-size: large;"><b>"Angel Portrait"</b></h1>
                     <p>2023</p>
                 </div>
             </div>
 
             <div class="card" onclick="openModal('image', 'assets/art/Oni.jpg')">
-                <img src="assets/art/Oni.jpg" alt="A digital drawing of an angelic girl shoulders and above. Has light blue hair and white feathers on both sides of her head. There are 2 angels wings covering her chest area." style="width:100%">
+                <img src="assets/art/Oni.jpg" alt="a girl with horn making an ok sign with her hand and holding it in front of her eye" style="width:100%">
                 <div class="container">
-                    <h4><b>"Oni Perspective"</b></h4>
+                    <h1 style="font-size: large;"><b>"Oni Perspective"</b></h1>
                     <p>2024</p>
                 </div>
             </div>
 
             <div class="card" onclick="openModal('image', 'assets/art/Devils-Daughter.gif')">
-                <img src="assets/art/Devils-Daughter.gif" alt="A digital drawing of a girl with black hair and red eyes. There are shadowy hands behind her and she has some blood on her cheeks. There is a wound on her chest in the shape of an upside down cross." style="width:100%">
+                <img src="assets/art/Devils-Daughter.gif" alt="A digital drawing of a girl with a wound on her chest in the shape of an cross." style="width:100%">
                 <div class="container">
-                    <h4><b>"Devil's Daughter"</b></h4>
+                    <h1 style="font-size: large;"><b>"Devil's Daughter"</b></h1>
                     <p>2019</p>
                 </div>
             </div>
@@ -61,9 +67,9 @@
             
 
             <div class="card" onclick="openModal('image', 'assets/art/Too-Late.jpg')">
-                <img src="assets/art/Too-Late.jpg" alt="A surreal digital drawing of a girl with purple/blue guts spilling out and the leftside of her ribs exposed. There is also a rose coming out of her chest. It is not gorey and has a space/galaxy theme with stars surrounding her." style="width:100%">
+                <img src="assets/art/Too-Late.jpg" alt="A surreal digital drawing of a girl with her guts and ribs exposed." style="width:100%">
                 <div class="container">
-                    <h4><b>"Too Late"</b></h4>
+                    <h1 style="font-size: large;"><b>"Too Late"</b></h1>
                     <p>2024</p>
                 </div>
             </div>
@@ -72,9 +78,9 @@
         
 
         <div class="card" onclick="openModal('image', 'assets/art/world-tree.gif')">
-            <img src="assets/art/world-tree.gif" alt="A surreal digital drawing of a girl with purple/blue guts spilling out and the leftside of her ribs exposed. There is also a rose coming out of her chest. It is not gorey and has a space/galaxy theme with stars surrounding her." style="width:100%">
+            <img src="assets/art/world-tree.gif" alt="A angel on her knees crying with her wings out." style="width:100%">
             <div class="container">
-                <h4><b>"Giving Up"</b></h4>
+                <h1 style="font-size: large;"><b>"Giving Up"</b></h1>
                 <p>2022</p>
             </div>
         </div>
@@ -94,7 +100,7 @@
         <div class="container-with-background">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>&copy; <span id="year"></span> Anna Liu. All rights reserved.</h3>
+                    <p>&copy; <span id="year"></span> Anna Liu. All rights reserved.</p>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="portfolio.html">Digital Art</a></li>
@@ -108,6 +114,16 @@
         </div>
     </footer>
 
+    
+    <script>
+        function updateFooterYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('year').innerText = currentYear;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateFooterYear);
+    </script>
+    
     <script src="script.js"></script>
     <!--the scroll reveal api-->
     <script src="https://unpkg.com/scrollreveal"></script>

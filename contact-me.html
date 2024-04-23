@@ -26,7 +26,7 @@
                         <!--ARTWORKS-->
     <main>
        
-        
+        <div class="card-container"><h1 style="color: rgb(168, 61, 255);">/ᐠ - ⩊ -マ</h1>  </div>
         <div class="wrap">
             <!-- ACCORDION -->
             <div class="donairishere">
@@ -35,7 +35,7 @@
             </div>
            
             <div class="contact-container">
-                <h2>Contact Me</h2>
+                <h2 style="color:rgb(255, 0, 255)">Contact Me</h2>
                 <form action="send_email.php" method="post"> <!--uses the action attribute and connects to the php file, and from there it should send it to my email, method attribute	sends the form-data as an HTTP post transaction-->
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" required><br>
@@ -70,7 +70,7 @@
     <div class="wrap">
             <!-- ACCORDION -->
             <div class="intro">
-                <h1 style="color:#D88C9A">About me</h1>
+                <h1 style="color:#ff5877">About me</h1>
                 <button class="accordion">Age, pronouns, occupation?</button>
                 <div class="panel">
                     <p>I'm born in 2001 and I go by she/her. I'm currently working to become a Graphic Designer</p>
@@ -92,7 +92,7 @@
         
         
             <div class="donairishere">
-                <img src="assets/art/Donair_1.gif" alt="Donair">
+                <img src="assets/art/Donair_1.gif" alt="a blue round monster bouncing up and down">
             </div>
         </div> 
     </main>
@@ -101,7 +101,7 @@
         <div class="container-with-background">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>&copy; <span id="year"></span> Anna Liu. All rights reserved.</h3>
+                    <p>&copy; <span id="year"></span> Anna Liu. All rights reserved.</p>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="portfolio.html">Digital Art</a></li>
@@ -115,6 +115,15 @@
         </div>
     </footer>
 
+    <script>
+        function updateFooterYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('year').innerText = currentYear;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateFooterYear);
+    </script>
+    
     <script src="script.js"></script>
     <!--the scroll reveal api-->
     <script src="https://unpkg.com/scrollreveal"></script>

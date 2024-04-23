@@ -13,14 +13,14 @@ h1 {
     font-weight: 700;
     font-style: normal;
     text-align: center;
-    color: #D88C9A;
+    color: #9b4fff;
   }
 
   h2 {
     font-family: "lores-9-plus-narrow", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #D88C9A;
+    color: #9b4fff;
   }
  
   h3 {
@@ -62,6 +62,7 @@ header {
   text-align: center;
 }
 
+
 .hero h1 {
   text-align: center; 
   color: white;
@@ -94,6 +95,13 @@ header {
 
 .container p{
   text-align: center;
+}
+
+.footer-info p{
+  font-family: "lores-9-wide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 
@@ -136,9 +144,30 @@ header nav ul li a:hover {
   font-style: normal;
   
 }
-    button:hover {
+
+  .button-link { /*needs a seperate button for links for valid html*/
+  padding: 10px 20px;
+  background-color: #db3265;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+  text-decoration: none;
+  font-family: "lores-9-narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+  .button-link:hover {
     background-color: #7034be;
     color: rgb(255, 255, 255);
+}
+
+  button:hover {
+  background-color: #7034be;
+  color: rgb(255, 255, 255);
   }
 
 
