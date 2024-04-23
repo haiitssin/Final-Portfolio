@@ -16,7 +16,7 @@
     <nav>
         <ul>
             <li><a href="index.html" id="index">Home</a></li>
-            <li><a href="portfolio.html" id="portfolio">Artworks</a></li>
+            <li><a href="portfolio.html" id="portfolio">Digital Art</a></li>
             <li><a href="design-projects.html" id="design-projects">Design Projects</a></li>
             <li><a href="animations.html" id="animations">Animation</a></li>
             <li><a href="contact-me.html" id="contact">Contact</a></li>
@@ -27,9 +27,16 @@
     <!--ARTWORKS-->
 <main>
     
+    <div class="card-container">
+        <h1>Twitch Banners</h1>   
+    </div>
         <div class="card-container">
-            <div class="card">
-            <video controls autoplay loop style="width:100%">
+            <p>My first animation in Adobe After Effects</p>
+        </div>
+
+        <div class="card-container">
+            <div class="card" onclick="openModal('video', 'assets/animation/twtich-2.webm')">
+            <video autoplay loop style="width:100%">
                 <source src="assets/animation/twtich-2.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
@@ -39,8 +46,8 @@
     
     
     <div class="card-container">
-        <div class="card">
-                <video controls autoplay loop style="width:100%">
+        <div class="card" onclick="openModal('video', 'assets/animation/twitch-3.webm')">
+                <video autoplay loop style="width:100%">
                 <source src="assets/animation/twitch-3.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
@@ -48,7 +55,16 @@
     </div>
     
         
-
+ <!-- The modal -->
+ <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <img class="modal-content" id="modalImg" alt="Large Image">
+    <video class="modal-content" id="modalVideo" controls>
+        
+        
+    </video>
+</div>
 
     
     </div>

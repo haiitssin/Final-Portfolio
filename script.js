@@ -83,19 +83,34 @@ ScrollReveal().reveal('.card-container > *', {
 
 
 
-
-//opens a modal that shows the image in the full size
-function openModal(imgSrc) {
-  document.getElementById("myModal").style.display = "block";
+// A Modal when u click a image or video to view it full size. 
+function openModal(contentType, contentSrc) {
+  var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("modalImg");
-  modalImg.src = imgSrc;
+  var modalVideo = document.getElementById("modalVideo");
+
+  
+  modalImg.style.display = "none";
+  modalVideo.style.display = "none";
+
+  //if image....if video....i love if else statements reminds me of highschool//
+  if (contentType === "image") {
+      modalImg.style.display = "block";
+      modalImg.src = contentSrc;
+  } else if (contentType === "video") {
+      modalVideo.style.display = "block";
+      modalVideo.src = contentSrc;
+  }
+
+  
+  modal.style.display = "block";
 }
 
-//lets them close it
+//lets you close it
 function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
 }
-
 
 
 
@@ -106,7 +121,7 @@ document.getElementById("currentYear").textContent = currentYear;
 
 
 
-
+//cat API
 function getCatPhoto() {
   fetch('https://api.thecatapi.com/v1/images/search')
     .then(response => response.json())
