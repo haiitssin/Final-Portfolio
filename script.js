@@ -77,7 +77,27 @@ ScrollReveal().reveal('.card-container > *', {
         duration: 1000,
        
     });
+
+     // apply to donairishere
+     ScrollReveal().reveal('.donairishere', {
+      delay: 300,
+      distance: '50px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      duration: 1000,
+     
+  });
+    // apply to contact
+    ScrollReveal().reveal('.contact-container', {
+      delay: 300,
+      distance: '50px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      duration: 1000,
+     
+  });
     
+ 
 });
 
 
