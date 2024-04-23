@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checks to make sure it is using PO
         exit;
     }
 
-    $to = "snommlem@gmail.com"; 
+    $to = "fakeemailm@gmail.com"; //email goes here
     $subject = "New Message from Contact Form";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
 
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checks to make sure it is using PO
 } else {
     echo "Error: Invalid request.";
 }
-
+//not working right now
 echo "Hello, World!"; 
 //Cross Site Scripting (XSS): if u dont convert some stuff to html//
 // people can inject scripts into the page, for example the form i think. then they can steal info, redirect users, and other hacker stuff. //
