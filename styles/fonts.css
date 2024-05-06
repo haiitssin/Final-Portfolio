@@ -116,7 +116,6 @@ nav ul {
   padding: 0;
   margin: 0;
   text-align: center;
-  margin: 0;
   padding: 0;
 }
 
@@ -136,6 +135,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   position: relative; 
+
 }
 
 
@@ -160,7 +160,20 @@ nav ul li a:hover {
  
 }
 
+@media (max-width: 768px) {
+  nav ul {
+    padding: 40px 0; /* Increase the padding between the top and bottom of the navigation bar */
+  }
 
+  nav ul li {
+    display: block;
+    margin: 30px 0; /* Increase the margin between links on smaller screens */
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0; /* Remove bottom margin from the last list item */
+  }
+}
 
 
 /*BUTTONSSSSS*/
