@@ -289,17 +289,21 @@
 
 
 /* Media Query for smaller screens */
-@media screen and (max-width: 600px) {
-  .donairishere {
-    width: 90%; 
-    border-radius: 0%;
-    justify-content: center;/* Adjust width for smaller screens */
-  }
-}
+
 
 @media (max-width: 768px) {
  
-  
+  .donairishere {
+    width: 90%; 
+    border-radius: 0%;
+    justify-content: center;
+    margin-left: 0;/* Adjust width for smaller screens */
+  }
+
+
+  .accordion {
+    margin: 0 auto; /* Center align the accordion */
+  }
   .wrap {
     flex-direction: column; /* Stacks items on small screens */
     align-items: center;
