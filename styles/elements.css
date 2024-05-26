@@ -181,6 +181,19 @@
   transform: scale(1.05);
 }
 
+@media (max-width: 844px) {
+  .card2 img {
+    filter: blur(3px);
+    transform: scale(1.05);
+  }
+
+  .card-content2 {
+    opacity: 1;
+  }
+  .card-overlay {
+    opacity: 1;
+  }
+}
 
 /* ACCORDION */
 .accordion {
