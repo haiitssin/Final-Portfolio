@@ -26,40 +26,37 @@
                         <!--ARTWORKS-->
     <main>
        
-        <div class="card-container"><h1 style="color: rgb(168, 61, 255);">/ᐠ - ⩊ -マ</h1>  </div>
-        <div class="wrap">
-            <!-- ACCORDION -->
-            <div class="donairishere">
-                
-                <img src="assets/animation/animation-cover.JPG" alt="Donair">
-            </div>
-           
-            <div class="contact-container">
-                <h2 style="color:rgb(255, 0, 255)">Contact Me</h2>
-                <form action="send_email.php" method="post"> <!--uses the action attribute and connects to the php file, and from there it should send it to my email, method attribute	sends the form-data as an HTTP post transaction-->
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required><br>
-                    
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required><br>
-                    
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" required></textarea><br>
-                    
-                    <!--<button type="submit">Submit</button>-->
-                    <!--its not working right now so i took off the button for now-->
-                    <!--future me will change it or figure it out-->
-                  </form>
-            </div>
-        
-        
-           
-        </div> 
-
-        <div class="card-container"> 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-ffRvuRRVEE"></iframe>
+        <div>
             
+            <h1 style="color: rgb(168, 61, 255);">/ᐠ - ⩊ -マ</h1>  
+        
         </div>
+            
+            <!-- ACCORDION -->
+                
+                    <div class="contact-container">
+                     <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        <div class="contact-left-title">
+                            <h2 style="color:rgb(255, 0, 255)">Contact Me!</h2>
+                            <hr>
+                        </div>
+                         
+                           
+                            <input type="text" id="name" name="name" placeholder="Your Name" class= "contact-inputs" required >
+                            <input type="email" id="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="4" class="contact-inputs" required></textarea><br>
+                    
+                            <button type="submit">Submit</button>
+                   
+                        </form>
+                        <div class="contact-right">  
+                            <img src="assets/animation/animation-cover.JPG" alt="Donair"> 
+                        </div>
+                    </div>
+        
+        
+           
+        
 
         
         <h1>Random Cat Picture</h1>
@@ -69,36 +66,11 @@
 
       
 
-    <div class="wrap">
-            <!-- ACCORDION -->
-            <div class="intro">
-                <h1 style="color:#ff5877">About me</h1>
-                <button class="accordion">Age, pronouns, occupation?</button>
-                <div class="panel">
-                    <p>I'm born in 2001 and I go by she/her. I'm currently working to become a Graphic Designer</p>
-                </div>
-                  
-                <button class="accordion">Are you available for hire?</button>
-                <div class="panel">
-                    <p>Yes! I'm happy to do art commissions or work on design projects! I'm very
-                         flexible so feel free to send me a message.</p>
-                </div>  
-                  
-                <button class="accordion">Fun fact about yourself?</button>
-                <div class="panel">
-                    <p>I love video games and media, the stories and worlds that have been created has
-                         brought a lot of joy to this world. I hope to keep working on my art skills to 
-                         become a concept or character designer in the future.</p>
-                </div>
-            </div>
+
         
-        
-            <div class="donairishere">
-                <img src="assets/art/Donair_1.gif" alt="a blue round monster bouncing up and down">
-            </div>
-        </div> 
     </main>
 
+    
     <footer class="footer">
         <div class="container-with-background">
             <div class="footer-content">
