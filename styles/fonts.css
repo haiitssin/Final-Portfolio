@@ -1,91 +1,92 @@
+/* Ensure no horizontal overflow */
+body {
+  overflow-x: hidden;
+}
+
+
+
 /*pixel pixel Fonts yaaay so cute*/
 body {
-    font-family: "lores-12", sans-serif;
-    margin: 0;
-    padding: 0;   
-    font-weight: 400;
-    font-style: normal;
-    background-color: #181818;
+  font-family: "lores-12", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #181818;
 }
 
 h1 {
-    font-family: "lores-9-plus-narrow", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    color: #9b4fff;
-  }
+  font-family: "lores-9-plus-narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: #9b4fff;
+}
 
-  h2 {
-    font-family: "lores-9-plus-narrow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #9b4fff;
-  }
- 
-  h3 {
-    font-family: "lores-9-wide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+h2 {
+  font-family: "lores-9-plus-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #9b4fff;
+}
 
+h3 {
+  font-family: "lores-9-wide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  p {
-    font-family: "lores-21-serif", sans-serif;
+p {
+  font-family: "lores-21-serif", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
-  }
-  
-
-
-header {
-    background-color: #333;
-    padding: 20px 0;
-    text-align: center;
 }
 
-
+header {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
 
 /*custom element fonts*/
-.intro h1{
+.intro h1 {
   font-family: "lores-9-plus-narrow", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: left;
 }
 
-.intro p{
+.intro p {
   font-family: "lores-9-plus-narrow", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  margin-top: 10px;
 }
 
-
 .hero h1 {
-  text-align: center; 
+  text-align: center;
   color: white;
-  
 }
 
 .footer a {
-  color: rgb(241, 206, 255); 
-  transition: color 0.3s; 
+  color: rgb(241, 206, 255);
+  transition: color 0.3s;
 }
 
 .footer a:hover {
   color: rgb(168, 61, 255);
 }
 
-.panel p{
-  font-size:large;
+.panel p {
+  font-size: large;
   font-family: "lores-9-narrow", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.card-container p{
+.card-container p {
   font-family: "lores-9-plus-narrow", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -93,39 +94,33 @@ header {
   margin-top: 0;
 }
 
-.container p{
+.container p {
   text-align: center;
 }
 
-.footer-info p{
+.footer-info p {
   font-family: "lores-9-wide", sans-serif;
   font-weight: 400;
   font-style: normal;
-
 }
 
 button a {
-  color: inherit; 
-  text-decoration: none; 
+  color: inherit;
+  text-decoration: none;
 }
 
 /*NAV BAR*/
-
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
-  padding: 0;
 }
 
 nav ul li {
   display: inline-block;
   margin: 0 10px;
-  display: inline;
-  margin-right: 20px;
 }
-
 
 nav ul li a {
   font-size: medium;
@@ -134,10 +129,8 @@ nav ul li a {
   font-style: normal;
   color: white;
   text-decoration: none;
-  position: relative; 
-
+  position: relative;
 }
-
 
 nav ul li a::after {
   content: '';
@@ -156,8 +149,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-  color: rgb(255, 0, 255); 
- 
+  color: rgb(255, 0, 255);
 }
 
 @media (max-width: 768px) {
@@ -167,7 +159,7 @@ nav ul li a:hover {
 
   nav ul li {
     display: block;
-    margin: 30px 0; /* Increase the margin between links on smaller screens */
+    margin: 15px 0; /* Increase the margin between links on smaller screens */
   }
 
   nav ul li:last-child {
@@ -178,7 +170,7 @@ nav ul li a:hover {
 
 /*BUTTONSSSSS*/
 
-  button {
+button {
   padding: 10px 20px;
   background-color: #db3265;
   color: #ffffff;
@@ -186,15 +178,12 @@ nav ul li a:hover {
   border-radius: 5px;
   cursor: pointer;
   font-size: medium;
-  
-  
   font-family: "lores-9-narrow", sans-serif;
   font-weight: 700;
   font-style: normal;
-  
 }
 
-  .button-link { /*needs a seperate button for links for valid html*/
+.button-link {
   padding: 10px 20px;
   background-color: #db3265;
   color: #ffffff;
@@ -207,51 +196,74 @@ nav ul li a:hover {
   font-weight: 700;
   font-style: normal;
   margin-top: 20px;
+  display: inline-block;
 }
 
-  .button-link:hover {
-    background-color: #7034be;
-    color: rgb(255, 255, 255);
-}
-
-  button:hover {
+.button-link:hover {
   background-color: #7034be;
   color: rgb(255, 255, 255);
-  }
+}
 
-
-
-
+button:hover {
+  background-color: #7034be;
+  color: rgb(255, 255, 255);
+}
 
 /*DEFAULT LIST*/
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  li:last-child {
-    margin-right: 0; 
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+li {
+  display: inline;
+  margin-right: 10px;
+}
 
+li:last-child {
+  margin-right: 0;
+}
 
-
-
- /* Responsive Styles */
- @media (max-width: 768px) {
-    h1 {
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
       font-size: 28px;
-    }
-  
-    h2 {
-      font-size: 20px;
-    }
   }
+
+  h2 {
+      font-size: 20px;
+  }
+}
+
+/* Adjust button-link for mobile screens */
+@media (max-width: 768px) {
+  .button-link {
+      width: 100%; /* Full width on mobile */
+      box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+      text-align: center; /* Center text */
+  }
+  
+  .intro {
+      text-align: center; /* Center the content */
+      margin: 0 20px; /* Add some margin for padding */
+  }
+  
+  .content {
+      padding: 0 20px; /* Add padding to avoid touching edges */
+  }
+
+  .content .intro {
+      margin-left: 0;
+      margin-top: 20px;
+  }
+  
+  .card-container {
+      padding: 0 10px; /* Add padding to avoid touching edges */
+  }
+
+  .wrap {
+      padding: 0 20px; /* Add padding to avoid touching edges */
+  }
+}
