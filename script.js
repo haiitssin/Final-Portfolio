@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-
   
 // scroll reveal and what it applies to
   window.addEventListener('DOMContentLoaded', function() {

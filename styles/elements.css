@@ -270,8 +270,8 @@
 }
 
 .donairishere {
-  width: 510px;
-  height: 460px;
+  width: 500px;
+  height: 400px;
   border-radius: 25%;
   overflow: hidden;
   margin-left: 20px;
@@ -280,17 +280,26 @@
 
 .donairishere img {
   /* Centers the image so donair can still see you when the screen gets smaller */
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 768px) {
-  .donairishere {
-    margin-left: 0;
-  }
 
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .donairishere {
+    width: 90%; 
+    border-radius: 0%;
+    justify-content: center;/* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  
   .wrap {
     flex-direction: column; /* Stacks items on small screens */
     align-items: center;
@@ -299,6 +308,7 @@
   .intro {
     margin-left: 0;
   }
+  
 }
 
 /* Footer */
