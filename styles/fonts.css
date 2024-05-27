@@ -135,16 +135,30 @@ button a {
 }
 
 /*NAV BAR*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the navigation items horizontally */
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+/* Style for the logo */
+nav .logo {
+  height: 50px; /* Adjust height as needed */
+  width: auto;
+  margin-right: 90px;
+}
+
+/* Style for the navigation links */
 nav ul {
+  display: flex;
   list-style: none;
+  margin-right: 90px;
   padding: 0;
-  margin: 0;
-  text-align: center;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 10px;
+  margin: 0 10px; /* Adjust spacing between navigation items */
 }
 
 nav ul li a {
@@ -157,40 +171,60 @@ nav ul li a {
   position: relative;
 }
 
+/* Style for the hover effect on navigation links */
 nav ul li a::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1px; /*line*/
-  background-color: rgb(255, 255, 255); /*line color*/
-  transform: scaleX(0); /*line*/
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
 nav ul li a:hover::after {
-  transform: scaleX(1); /*line animation*/
+  transform: scaleX(1);
 }
 
 nav ul li a:hover {
   color: rgb(255, 0, 255);
 }
 
+/* Media query for smaller screens */
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
   nav ul {
-    padding: 40px 0; /* Increase the padding between the top and bottom of the navigation bar */
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px; /* Increase the padding between the top and bottom of the navigation bar */
+    margin: 0;
   }
 
   nav ul li {
-    display: block;
     margin: 15px 0; /* Increase the margin between links on smaller screens */
   }
 
   nav ul li:last-child {
     margin-bottom: 0; /* Remove bottom margin from the last list item */
   }
+
+  nav .logo {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+    margin: 0;
+  }
+
 }
+
+
+
 
 
 /*BUTTONSSSSS*/

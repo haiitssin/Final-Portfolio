@@ -17,6 +17,37 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+
+$(document).ready(function(){
+  $('.dropdown-toggle').click(function(){
+    $(this).parent().toggleClass('active'); // Toggle active class
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.card2');
+
+  const observerOptions = {
+    root: null,
+    threshold: 0.8
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      } else {
+        entry.target.classList.remove('in-view');
+      }
+    });
+  }, observerOptions);
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+});
+
   
 // scroll reveal and what it applies to
   window.addEventListener('DOMContentLoaded', function() {
