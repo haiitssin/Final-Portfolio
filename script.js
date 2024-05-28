@@ -18,11 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-$(document).ready(function(){
-  $('.dropdown-toggle').click(function(){
-    $(this).parent().toggleClass('active'); // Toggle active class
-  });
-});
 
 
 document.addEventListener('DOMContentLoaded', function() {
