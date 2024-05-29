@@ -526,3 +526,7 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+img, video { /*disables right click saves so they can't save images*/
+  pointer-events: none;
+}

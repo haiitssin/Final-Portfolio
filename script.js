@@ -43,7 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-  
+
+
 // scroll reveal and what it applies to
   window.addEventListener('DOMContentLoaded', function() {
     // apply to hero title
@@ -125,7 +126,11 @@ ScrollReveal().reveal('.card-container > *', {
  
 });
 
-
+$('img').mousedown(function (e) { // not stealing! not working right now?
+  if(e.button == 2) { // right click
+    return false; // do nothing!
+  }
+});
 
 // A Modal when u click a image or video to view it full size. 
 function openModal(contentType, contentSrc) {
